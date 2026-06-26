@@ -2,7 +2,7 @@
 
 `drm-protector-batch.php` is a PHP CLI script for batch processing PDF files.
 
-The script recursively scans an input directory, uploads each PDF file to a DRM protection service, applies content protection, and downloads the protected files into an output directory while preserving the original directory structure.
+The script recursively scans an input directory, uploads each PDF file to the VeryDRM DRM protection service, applies DRM protection, and downloads the protected files into an output directory while preserving the original directory structure.
 
 This tool is intended for command-line use and is suitable for batch processing large collections of PDF documents.
 
@@ -82,7 +82,7 @@ The script associates uploaded files with the email address configured in the so
 'Email' => 'your-email@example.com'
 ```
 
-Ensure that this email address matches the intended DRM account before running the script.
+Ensure that this email address belongs to your VeryDRM account before running the script.
 
 ---
 
@@ -143,9 +143,17 @@ This approach works well when temporary upload limits are encountered.
 
 ---
 
+## Notes
+
+This script is a command-line client for the VeryDRM service.
+
+A valid VeryDRM account and Internet connection are required to upload, protect, and download documents.
+
+---
+
 ## Documentation
 
-Additional documentation:
+For more information about the VeryDRM service and supported content protection features:
 
 - [PDF Content Security](https://verydrm.com/pdf-content-protection.php)
 - [Video Content Security](https://verydrm.com/video-content-protection.php)
